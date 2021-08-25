@@ -6,7 +6,7 @@ const maxTime = startTime + 60000;
 const getStartAndFinishTime = () => {
   const sT = Math.floor(Math.random() * (maxTime - startTime + 1) + startTime);
   const eT = Math.floor(Math.random() * (maxTime - sT + 1) + sT);
-  return [sT, eT + 30000];
+  return [sT, eT + 10000];
 };
 
 const athletes = [];
