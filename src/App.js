@@ -88,7 +88,11 @@ export default class App extends Component {
     const { outputOrder, currentTime } = this.state;
     return (
       <div className="App">
-        <Entry className="Entry" entries={outputOrder} />
+        <Entry
+          className="Entry"
+          entries={outputOrder}
+          currentTime={currentTime}
+        />
       </div>
     );
   }

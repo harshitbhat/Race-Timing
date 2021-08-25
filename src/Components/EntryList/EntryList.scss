@@ -15,10 +15,19 @@
   font-size: 0.75rem;
 }
 
+.header-text {
+  text-decoration: underline;
+}
+
 .table-body {
   height: 98%;
   width: 100%;
   overflow: scroll;
+}
+
+.winner-table {
+  height: 98%;
+  width: 100%;
 }
 
 .table-content {
@@ -28,8 +37,11 @@
   width: calc(100%-20px);
   display: flex;
   font-size: 1.2rem;
-  margin-bottom: 10px;
-  border-radius: 10px;
+  //border-bottom: 1px solid rgba(230, 172, 217, 0.651);
+}
+
+.table-content:nth-of-type(2n) {
+  background-color: #faf7f7;
 }
 
 .table-content-ranking {
@@ -56,3 +68,17 @@
   display: flex;
   align-items: center;
 }
+
+.medal {
+  width: 25%;
+  height: 120%;
+}
+
+.addMargin {
+  margin-bottom: 15px;
+  border-radius: 5px;
+  height: 65px;
+  background-color: #fff !important;
+}
+
+// <a href="https://www.freepik.com/vectors/design">Design vector created by bakar015 - www.freepik.com</a>
