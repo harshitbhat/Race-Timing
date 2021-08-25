@@ -8,7 +8,6 @@ export default class App extends Component {
     super(props);
     this.state = {
       entryOrder: [],
-      finishOrder: [],
       outputOrder: [],
       startTime: null,
       firstFinishTime: null,
@@ -17,8 +16,6 @@ export default class App extends Component {
       interval: 500,
     };
   }
-
-  getWinnerList(filteredOrder, finishOrder) {}
 
   filterUsers() {
     const { currentTime, entryOrder, interval, firstFinishTime } = this.state;
@@ -61,7 +58,6 @@ export default class App extends Component {
 
     this.setState({
       entryOrder: sortedAthletesEntry,
-      finishOrder: sortedAthletesFinish,
       startTime: sortedAthletesEntry[0].startTime,
       firstFinishTime: sortedAthletesFinish[0].finishTime,
       endTime: sortedAthletesFinish[len - 1].finishTime,
