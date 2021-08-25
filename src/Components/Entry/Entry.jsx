@@ -11,10 +11,14 @@ export default class Entry extends Component {
             {entries.map((player) => (
               <li key={player.fullName}>
                 <h5>
-                  {player.fullName} -{' '}
+                  {player.rank} - {player.fullName} -{' '}
                   {new Date(player.startTime).toLocaleString() +
-                    ' ' +
-                    new Date(player.startTime).getMilliseconds()}
+                    ':' +
+                    new Date(player.startTime).getMilliseconds()}{' '}
+                  -
+                  {new Date(player.finishTime).toLocaleString() +
+                    ':' +
+                    new Date(player.finishTime).getMilliseconds()}
                 </h5>
               </li>
             ))}

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.scss';
 import Entry from './Components/Entry/Entry';
-import Winner from './Components/WInner/Winner';
 import athletes from './utils/getNames';
 
 export default class App extends Component {
@@ -10,28 +9,44 @@ export default class App extends Component {
     this.state = {
       entryOrder: [],
       finishOrder: [],
-      filteredEntry: [],
-      filteredFinish: [],
+      outputOrder: [],
       startTime: null,
+      firstFinishTime: null,
       endTime: null,
       currentTime: null,
       interval: 500,
     };
   }
 
+  getWinnerList(filteredOrder, finishOrder) {}
+
   filterUsers() {
-    let filteredEntryArr = this.state.entryOrder.filter(
-      (player) => player.startTime <= this.state.currentTime
+    const { currentTime, entryOrder, interval, firstFinishTime } = this.state;
+
+    const filteredList = entryOrder.filter(
+      (player) => player.startTime <= currentTime
     );
-    filteredEntryArr.reverse();
-    const filteredFinishArr = this.state.finishOrder.filter(
-      (player) => player.finishTime <= this.state.currentTime
-    );
-    this.setState({
-      filteredEntry: filteredEntryArr,
-      filteredFinish: filteredFinishArr,
-      currentTime: this.state.currentTime + this.state.interval,
-    });
+
+    if (currentTime < firstFinishTime) {
+      this.setState({
+        outputOrder: filteredList.reverse(),
+        currentTime: currentTime + interval,
+      });
+    } else {
+      const winner = filteredList
+        .filter((player) => player.finishTime <= currentTime)
+        .sort((pl1, pl2) => pl1.finishTime - pl2.finishTime);
+      const remaining = filteredList
+        .filter((player) => player.finishTime > currentTime)
+        .sort((pl1, pl2) => pl2.startTime - pl1.startTime);
+
+      winner.forEach((player, index) => (player.rank = index + 1));
+      remaining.forEach((player, index) => (player.rank = 'N/A'));
+      this.setState({
+        outputOrder: [...winner, ...remaining],
+        currentTime: currentTime + interval,
+      });
+    }
   }
 
   componentDidMount() {
@@ -48,15 +63,19 @@ export default class App extends Component {
       entryOrder: sortedAthletesEntry,
       finishOrder: sortedAthletesFinish,
       startTime: sortedAthletesEntry[0].startTime,
+      firstFinishTime: sortedAthletesFinish[0].finishTime,
       endTime: sortedAthletesFinish[len - 1].finishTime,
-      currentTime: sortedAthletesEntry[0].startTime - 10000,
+      currentTime: sortedAthletesEntry[0].startTime - 5000,
     });
 
     this.timer = setInterval(() => this.filterUsers(), this.state.interval);
   }
 
   componentDidUpdate() {
-    if (this.state.currentTime > this.state.endTime) {
+    if (
+      this.state.outputOrder.length > 0 &&
+      !this.state.outputOrder.some((player) => player.rank === 'N/A')
+    ) {
       clearInterval(this.timer);
     }
   }
@@ -66,13 +85,11 @@ export default class App extends Component {
   }
 
   render() {
-    const { filteredEntry, filteredFinish } = this.state;
+    const { outputOrder, currentTime } = this.state;
     return (
       <div className="App">
-        <Entry className="Entry" entries={filteredEntry} />
-        <Winner className="Winner" finishes={filteredFinish} />
+        <Entry className="Entry" entries={outputOrder} />
       </div>
     );
   }
 }
-  
