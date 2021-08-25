@@ -23,18 +23,16 @@ export default class EntryList extends Component {
       (player) => player.rank !== 1 && player.rank !== 2 && player.rank !== 3
     );
     return (
-      <div className="ranking-table">
-        <div>
-          <div className="table-headers">
-            <span className="table-content-ranking header-text">Ranking</span>
-            <span className="table-content-name header-text">Name</span>
-            <span className="table-content-startTime header-text">
-              Start Time
-            </span>
-            <span className="table-content-finishTime header-text">
-              Finish Time
-            </span>
-          </div>
+      <div className="main-table">
+        <div className="table-headers">
+          <span className="table-content-ranking header-text">Ranking</span>
+          <span className="table-content-name header-text">Name</span>
+          <span className="table-content-startTime header-text">
+            Start Time
+          </span>
+          <span className="table-content-finishTime header-text">
+            Finish Time
+          </span>
         </div>
         <div>
           {winner.length > 0 ? (
@@ -84,7 +82,7 @@ export default class EntryList extends Component {
               </span>
               <span className="table-content-finishTime">
                 {currentTime < player.finishTime
-                  ? '-'
+                  ? ''
                   : this.getTime(player.finishTime)}
               </span>
             </div>

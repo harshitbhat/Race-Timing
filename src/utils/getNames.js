@@ -1,3 +1,4 @@
+import names from './names';
 const numberOfAthletes = 10;
 
 const startTime = Date.now();
@@ -10,19 +11,6 @@ const getStartAndFinishTime = () => {
 };
 
 const athletes = [];
-
-const names = [
-  'Emmett Bishop',
-  'Fenix Skiles',
-  'Jacoby Schulz',
-  'Juna Steiger',
-  'Shlomo Hacker',
-  'Aaryn Manzanares',
-  'Renato Nordstrom',
-  'Aayden Lombardi',
-  'Jaxiel Danna',
-  'Danae Hermann',
-];
 
 for (let i = 0; i < numberOfAthletes; i++) {
   const [startTime, finishTime] = getStartAndFinishTime();
