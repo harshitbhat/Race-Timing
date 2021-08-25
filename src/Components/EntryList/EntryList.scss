@@ -77,7 +77,59 @@
   border-radius: 5px;
   height: 65px;
   background-color: #fff !important;
-  border: 2px double #000c66 !important;
+  border: 0.5px solid #000c66 !important;
 }
 
 // <a href="https://www.freepik.com/vectors/design">Design vector created by bakar015 - www.freepik.com</a>
+
+@media (max-width: 991.98px) {
+  .table-content {
+    font-size: 1rem;
+    height: 40px;
+  }
+  .table-body {
+    height: 36.3%;
+  }
+  .addMargin {
+    height: 50px;
+  }
+  .medal {
+    width: 20%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .table-content {
+    font-size: 0.9rem;
+    height: 30px;
+  }
+  .table-body {
+    height: 34.6%;
+  }
+  .addMargin {
+    height: 40px;
+  }
+  .medal {
+    width: 30%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .table-headers {
+    font-size: 0.6rem;
+  }
+  .table-content {
+    font-size: 0.6rem;
+    height: 15px;
+  }
+  .table-body {
+    height: 31.1%;
+  }
+  .addMargin {
+    height: 25px;
+  }
+  .medal {
+    width: 25%;
+    height: 130%;
+  }
+}
