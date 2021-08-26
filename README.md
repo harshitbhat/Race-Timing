@@ -1,1 +1,1 @@
-Go to project pirectory and run ### `npm install` and then ### `npm start`
+Go to project directory and run `npm install` and then `npm start`
