@@ -12,9 +12,7 @@
 }
 
 .addWinner {
-  margin: 0 auto;
-  margin-bottom: 10px;
-  height: 65px;
+  height: calc(100% / 3) !important;
   background-color: #fff !important;
   font-size: 0.9rem !important;
 }

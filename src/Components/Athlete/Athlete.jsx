@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './TestComponent.scss';
+import './Athlete.scss';
 
 export default class TestComponent extends Component {
   render() {

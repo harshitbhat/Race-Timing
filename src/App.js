@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
+
 import Entry from './Components/Entry/Entry';
-import TestComponent from './Components/TestComponent/TestComponent';
+import Athlete from './Components/Athlete/Athlete';
 import playeres from './utils/test';
+import Overlay from './Components/Overlay/Overlay';
+import Button from './Components/Button/Button';
+
 import './App.scss';
 
 export default class TestApp extends Component {
@@ -17,12 +21,6 @@ export default class TestApp extends Component {
       entries: [],
     };
     this.startRace = this.startRace.bind(this);
-  }
-
-  componentDidMount() {
-    this.setState({
-      athletes: playeres,
-    });
   }
 
   go() {
@@ -46,13 +44,9 @@ export default class TestApp extends Component {
     }
     this.setState(() => ({
       athletes: running,
-      tick: tick + 0.5,
+      tick: tick + 1,
       entries: filtered,
     }));
-  }
-
-  calculateTime(distance, acceleration, time) {
-    return time + Math.round(Math.sqrt((2 * distance) / acceleration) * 1000);
   }
 
   startRace() {
@@ -63,7 +57,24 @@ export default class TestApp extends Component {
       timeStarted: currentTime,
     }));
 
-    this.timer = setInterval(() => this.go(), 500);
+    this.timer = setInterval(() => this.go(), 1000);
+  }
+
+  componentDidMount() {
+    this.setState({
+      athletes: playeres,
+    });
+  }
+
+  componentDidUpdate() {
+    const { athletes, raceDistance } = this.state;
+    if (athletes.every((pl) => pl.distance === raceDistance)) {
+      clearInterval(this.timer);
+    }
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.timer);
   }
 
   render() {
@@ -76,19 +87,13 @@ export default class TestApp extends Component {
           <span>Leader Board</span>
         </div>
         <div className="Table-Content">
-          <TestComponent arr={athletes} />
+          <Athlete arr={athletes} />
           <Entry entries={entries} raceDistance={raceDistance} />
         </div>
         <div className="Button-Start">
-          {!isRaceStarted && (
-            <button className="BTN-start-el" onClick={this.startRace}>
-              Start Race
-            </button>
-          )}
+          <Button isRaceStarted={isRaceStarted} startRace={this.startRace} />
         </div>
-        <div className="small-screen-message">
-          <h2>Please use aplication on larger screen</h2>
-        </div>
+        <Overlay />
       </div>
     );
   }

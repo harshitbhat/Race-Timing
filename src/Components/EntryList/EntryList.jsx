@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './EntryListN.scss';
+import './EntryList.scss';
 import Winners from '../Winners/Winners';
 import Consolation from '../Consolation/Consolation';
 import TableHeaders from '../TableHeaders/TableHeaders';
