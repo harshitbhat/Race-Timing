@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Entry.scss';
-import loader from '../../loader.svg';
+import loader from '../../images/loader.svg';
 import EntryList from '../EntryList/EntryList';
 
 export default class Entry extends Component {
