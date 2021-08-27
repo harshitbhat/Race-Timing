@@ -17,18 +17,21 @@ To run the project in your local environment:
 ### At Start
 
 At the start, no one has entered the track, so a loader runs till someone enters the field.
+
 ![Loader](https://github.com/harshitbhat/Small-Projects/blob/master/screenshots/test/loader.gif)
 
 ### As Athletes enter the field
 
 As soon as players start entering the field, they are shown in order of entering the field.
 The one entering the field last is shown at the top and the rest are moved down the table based on their arrival time.
+
 ![Arrival](https://github.com/harshitbhat/Small-Projects/blob/master/screenshots/test/arrival.gif)
 
 ### As some athlete finished the race
 
 Just as some player crosses the finish line, his rank is displayed and they are sorted in the order of their finish time. Rest of the player are still in the table as they enter the track.
 The top 3 places are shown seperatly and rank of rest of the players is shown in the table only in the order they finish the race.
+
 ![Finish](https://github.com/harshitbhat/Small-Projects/blob/master/screenshots/test/winner.gif)
 
 ### Code Structure
@@ -36,9 +39,10 @@ The top 3 places are shown seperatly and rank of rest of the players is shown in
 The React consists of the View part of the MVC Architecture.
 The code has been sturctured so that it is extensible, and with just few changes based on the data, it can be used with the server, rest of the code will remain same.
 
-### The App is mobile responsive,
+### The App is mobile responsive
 
 The app has been made mobile responsive so that it works on any type of screen size.
+
 ![Moto G4](https://github.com/harshitbhat/Small-Projects/blob/master/screenshots/test/images/motoG4.jpeg)
 ![Pixel 2](https://github.com/harshitbhat/Small-Projects/blob/master/screenshots/test/images/pixel2.jpeg)
 ![iPhone X](https://github.com/harshitbhat/Small-Projects/blob/master/screenshots/test/images/iPhoneX.jpeg)
