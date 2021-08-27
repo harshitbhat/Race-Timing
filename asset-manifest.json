@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Race-Timing/static/css/main.ec56b022.chunk.css",
+    "main.js": "/Race-Timing/static/js/main.df487eac.chunk.js",
+    "main.js.map": "/Race-Timing/static/js/main.df487eac.chunk.js.map",
+    "runtime-main.js": "/Race-Timing/static/js/runtime-main.abf3de00.js",
+    "runtime-main.js.map": "/Race-Timing/static/js/runtime-main.abf3de00.js.map",
+    "static/js/2.f81e1891.chunk.js": "/Race-Timing/static/js/2.f81e1891.chunk.js",
+    "static/js/2.f81e1891.chunk.js.map": "/Race-Timing/static/js/2.f81e1891.chunk.js.map",
+    "static/js/3.2e91fcf1.chunk.js": "/Race-Timing/static/js/3.2e91fcf1.chunk.js",
+    "static/js/3.2e91fcf1.chunk.js.map": "/Race-Timing/static/js/3.2e91fcf1.chunk.js.map",
+    "index.html": "/Race-Timing/index.html",
+    "static/css/main.ec56b022.chunk.css.map": "/Race-Timing/static/css/main.ec56b022.chunk.css.map",
+    "static/js/2.f81e1891.chunk.js.LICENSE.txt": "/Race-Timing/static/js/2.f81e1891.chunk.js.LICENSE.txt",
+    "static/media/bronze.dc137367.jpg": "/Race-Timing/static/media/bronze.dc137367.jpg",
+    "static/media/gold.ffe2863d.jpg": "/Race-Timing/static/media/gold.ffe2863d.jpg",
+    "static/media/loader.cd569efa.svg": "/Race-Timing/static/media/loader.cd569efa.svg",
+    "static/media/silver.4f1867b4.jpg": "/Race-Timing/static/media/silver.4f1867b4.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.abf3de00.js",
+    "static/js/2.f81e1891.chunk.js",
+    "static/css/main.ec56b022.chunk.css",
+    "static/js/main.df487eac.chunk.js"
+  ]
+}
