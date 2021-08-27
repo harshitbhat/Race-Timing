@@ -30,8 +30,8 @@ The one entering the field last is shown at the top and the rest are moved down 
 
 ### As some athletes complete the race
 
-Just when a player crosses the finish line, his rank is displayed and they are sorted in the order of their finish time. Rest of the player are still in the table as they enter the track.
-The top 3 places are shown seperately and rank of rest of the players is shown in the table only in the order they finish the race.
+Just when a player crosses the finish line, his rank is displayed and they are sorted in the order of their finish time. Rest of the players are still in the table as they enter the track.
+The top 3 places are shown seperately and rank of rest of the players are shown in the table only in the order they finish the race.
 
 ![Finish](https://github.com/harshitbhat/Small-Projects/blob/master/screenshots/test/winner.gif)
 
