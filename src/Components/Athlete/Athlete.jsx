@@ -9,7 +9,7 @@ export default class TestComponent extends Component {
         <div className="Player-data-headers">
           <span className="Player-data-id">Id</span>
           <span className="Player-data-name">Name</span>
-          <span className="Player-data-distance">Distance</span>
+          <span className="Player-data-distance">Distance Covered (m)</span>
         </div>
         <div className="Player-data-main">
           {arr.map((pl) => (
