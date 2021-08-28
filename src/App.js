@@ -88,7 +88,11 @@ export default class TestApp extends Component {
         </div>
         <div className="Table-Content">
           <Athlete arr={athletes} />
-          <Entry entries={entries} raceDistance={raceDistance} />
+          <Entry
+            entries={entries}
+            raceDistance={raceDistance}
+            isRaceStarted={isRaceStarted}
+          />
         </div>
         <div className="Button-Start">
           <Button isRaceStarted={isRaceStarted} startRace={this.startRace} />

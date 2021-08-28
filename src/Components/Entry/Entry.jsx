@@ -17,8 +17,17 @@ export default class Entry extends Component {
     return [...completed, ...notCompleted];
   }
   render() {
-    const { entries, raceDistance } = this.props;
+    const { entries, raceDistance, isRaceStarted } = this.props;
+    if (!isRaceStarted) {
+      return (
+        <div className="displayTable">
+          <h2 className="display-Message">The race has not started yet</h2>
+        </div>
+      );
+    }
+
     const filtered = this.filterEntries(entries);
+
     return (
       <div className="displayTable">
         {entries.length > 0 ? (
