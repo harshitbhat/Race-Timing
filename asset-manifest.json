@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Race-Timing/static/css/main.0849e1ef.chunk.css",
-    "main.js": "/Race-Timing/static/js/main.e322005f.chunk.js",
-    "main.js.map": "/Race-Timing/static/js/main.e322005f.chunk.js.map",
+    "main.css": "/Race-Timing/static/css/main.b3e99649.chunk.css",
+    "main.js": "/Race-Timing/static/js/main.a5720376.chunk.js",
+    "main.js.map": "/Race-Timing/static/js/main.a5720376.chunk.js.map",
     "runtime-main.js": "/Race-Timing/static/js/runtime-main.bd97f1d6.js",
     "runtime-main.js.map": "/Race-Timing/static/js/runtime-main.bd97f1d6.js.map",
     "static/js/2.9557b88d.chunk.js": "/Race-Timing/static/js/2.9557b88d.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.be5668b5.chunk.js": "/Race-Timing/static/js/3.be5668b5.chunk.js",
     "static/js/3.be5668b5.chunk.js.map": "/Race-Timing/static/js/3.be5668b5.chunk.js.map",
     "index.html": "/Race-Timing/index.html",
-    "static/css/main.0849e1ef.chunk.css.map": "/Race-Timing/static/css/main.0849e1ef.chunk.css.map",
+    "static/css/main.b3e99649.chunk.css.map": "/Race-Timing/static/css/main.b3e99649.chunk.css.map",
     "static/js/2.9557b88d.chunk.js.LICENSE.txt": "/Race-Timing/static/js/2.9557b88d.chunk.js.LICENSE.txt",
     "static/media/loader-2.7fbd4e85.svg": "/Race-Timing/static/media/loader-2.7fbd4e85.svg",
     "static/media/winnerLoader.5f0859c5.svg": "/Race-Timing/static/media/winnerLoader.5f0859c5.svg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.bd97f1d6.js",
     "static/js/2.9557b88d.chunk.js",
-    "static/css/main.0849e1ef.chunk.css",
-    "static/js/main.e322005f.chunk.js"
+    "static/css/main.b3e99649.chunk.css",
+    "static/js/main.a5720376.chunk.js"
   ]
 }
