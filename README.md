@@ -30,7 +30,7 @@ To run the project in your local environment:
 ### Initial State
 
 - At the start, the race has not started.
-- One table shows the details of the athletes and a button which starts the race.
+- Player Data Table shows the details of the athletes and a button which starts the race.
 
 ![Initial](https://github.com/harshitbhat/Small-Projects/blob/master/screenshots/test/new/initial.gif)
 
