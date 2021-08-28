@@ -16,8 +16,8 @@ export default class TestApp extends Component {
       tick: 0,
       isRaceStarted: false,
       timeStarted: null,
-      finalLegDistance: 100,
-      raceDistance: 300,
+      finalLegDistance: 150,
+      raceDistance: 200,
       entries: [],
     };
     this.startRace = this.startRace.bind(this);

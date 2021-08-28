@@ -9,10 +9,12 @@ Following information is available:
 
 - LeaderBoard
   - This comprises of the timings of the athletes that have entered the finish corridor.
-  - Two types of timing have been captured by the sensors on the race track, i.e FinishCorridor start Time and Race Finish Time.
+  - Two types of timing have been captured by the sensors on the race track, i.e Finish Corridor Start Time and Race Finish Time.
   - This leaderboard is divided into two sections:
     - The top section shows the top 3 athletes in ascending order of their finish time.
     - The bottom section shows the athletes as they enter the finishing corridor.
+
+## Project Installation
 
 The app can be viewed live ([Live Demo](https://harshitbhat.github.io/Race-Timing/)).
 
@@ -30,7 +32,7 @@ To run the project in your local environment:
 - At the start, the race has not started.
 - One table shows the details of the athletes and a button which starts the race.
 
-![Loader](https://github.com/harshitbhat/Small-Projects/blob/master/screenshots/test/loader.gif)
+![Initial](https://github.com/harshitbhat/Small-Projects/blob/master/screenshots/test/new/initial.gif)
 
 ### As the race starts
 
@@ -38,9 +40,4 @@ To run the project in your local environment:
 - The bottom section of the Leaderboard gets populated as soon as some athlete enters the finish corridor.
 - As soon as someone finishes the race, the final ranking is shown in the Leaderboard table..
 
-![Arrival](https://github.com/harshitbhat/Small-Projects/blob/master/screenshots/test/arrival.gif)
-
-### Code Structure
-
-- The React consists of the View part of the MVC Architecture.
-- The code has been sturctured so that it is extensible, and with just few changes based on the data, it can be used with the server, rest of the code will remain same.
+![Race](https://github.com/harshitbhat/Small-Projects/blob/master/screenshots/test/new/race.gif)
